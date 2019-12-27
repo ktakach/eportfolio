@@ -1,21 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
+
 export class HomeComponent implements OnInit {
 
-  public h1Style: boolean = false;
+  users: Object;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.getUsers().subscribe(data => {
+      this.users=data
+      console.log(this.users)
+    })
   }
 
-  firstClick(){
-    this.h1Style = true;
-  }
 
 }
