@@ -1,6 +1,9 @@
-<h1>Contact us</h1>
+<h1>Contact</h1>
 
-<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
+<p>Want to talk more? Either <a href="mailto:kltakach@gmail.com">email</a> me or connect on <a href="https://www.linkedin.com/in/ktakach/">LinkedIn</a>!
+
+</p>
+<!-- <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
 
   <h5 *ngIf="success">Your form is valid!</h5>
 
@@ -22,12 +25,12 @@
 
   <input type="submit" value="Send message" class="cta">
 
-</form>
+</form> -->
 
-<div *ngIf="submitted" class="results">
+<!-- <div *ngIf="submitted" class="results">
   <strong>Name:</strong>
   <span>{{ messageForm.controls.name.value }}</span>
 
   <strong>Message:</strong> 
   <span>{{ messageForm.controls.message.value }}</span>
-</div> 
+</div>  -->
