@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavComponent } from './nav/nav.component';
-import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ResumeComponent } from './resume/resume.component';
     HomeComponent,
     ContactComponent,
     NavComponent,
-    AboutComponent,
     ResumeComponent
   ],
   imports: [
