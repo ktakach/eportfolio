@@ -1,11 +1,18 @@
-contact
-    display: inline-block
-    float: left
-    width: 50%
+.wrapper
+    display: grid;
+    grid-template-columns: auto 400px
+    grid-template-rows: auto 400px
+    grid-template-areas: "title icon" "text icon"
+
+    h1 
+        grid-area: title
+
+.contact
+    display: block
+    grid-area: text
 
 img
-    float: right
-    height: 400px
-    width: 50%
-    margin-top: -165px
-
+    display: block
+    width: 100%
+    margin-top: 0px
+    grid-area: icon
