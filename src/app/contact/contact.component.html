@@ -1,33 +1,11 @@
-<h1>Contact us</h1>
+<div class="wrapper">
+  <h1>Contact</h1>
+  <img src="assets/convo.svg" alt="forum icon">
+  <div class="contact">
+    <p>Want to talk more? Either <a href="mailto:kltakach@gmail.com">email</a> me or connect on <a
+        href="https://www.linkedin.com/in/ktakach/">LinkedIn</a>! <br /><br />
 
-<form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-
-  <h5 *ngIf="success">Your form is valid!</h5>
-
-  <label>
-    Name:
-    <input type="text" formControlName="name">
-    <div *ngIf="submitted && messageForm.controls.name.errors" class="error">
-      <div *ngIf="messageForm.controls.name.errors.required">Your name is required.</div>
-    </div>
-  </label>
-
-  <label>
-    Message:
-    <textarea formControlName="message"></textarea>
-    <div *ngIf="submitted && messageForm.controls.message.errors" class="error">
-      <div *ngIf="messageForm.controls.message.errors.required">A message is required</div>
-    </div>
-  </label>
-
-  <input type="submit" value="Send message" class="cta">
-
-</form>
-
-<div *ngIf="submitted" class="results">
-  <strong>Name:</strong>
-  <span>{{ messageForm.controls.name.value }}</span>
-
-  <strong>Message:</strong> 
-  <span>{{ messageForm.controls.message.value }}</span>
-</div> 
+      You can also check out my <a href="https://github.com/ktakattack">GitHub</a>.
+    </p>
+  </div>
+</div>
